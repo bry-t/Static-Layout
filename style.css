@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-   }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -28,7 +28,7 @@ body {
 
 .dropdown {
     position: fixed;
-    height: 65px;
+    height: 75px;
     width: 100%;
     background-color: rgb(51, 48, 48);
     display: flex;
@@ -40,6 +40,11 @@ body {
 
 .courses, .admissions {
     position: relative;
+}
+
+.main-nav-link:hover {
+    background-color: #221f1f;
+    display: block;
 }
 
 .courses ul {
@@ -105,14 +110,6 @@ body {
     border: none;
 }
 
-.courses:hover,
-.admissions:hover,
-.veterans:hover {
-    background-color: #221f1f;
-    padding: 0;
-    margin: 0;
-}
-
 .courses ul:hover,
 .admissions ul:hover,
 .veterans ul:hover {
@@ -125,7 +122,7 @@ body {
     transform: translateY(12px)
 }
 
-.admissions button:hover + ul {
+.admissions button:hover+ ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(12px)
@@ -146,8 +143,10 @@ body {
     font-weight: 750;
     line-height: 1.5;
     background-color: rgba(0, 0, 0, .5);
-    padding: .1em 300px .1em .2em;
-    margin: 590px 0 0 800px;
+    padding: .1em 280px .1em .2em;
+    /* margin: 590px 0 0 800px; */
+    top: 45.2vh;
+    left: 31.2vw;
     
 }
 
@@ -160,7 +159,9 @@ body {
     font-weight: 715;
     background-color: rgb(219, 52, 52);
     padding: 5px 18px 7px 18px;
-    margin: 780px 0 0 800px;
+    /* margin: 780px 0 0 800px; */
+    top: 60.3vh;
+    left: 31.2vw;
 }
 
 .learn-more:hover {
@@ -168,14 +169,99 @@ body {
     transition: .4s;
 }
 
-.container1 {
-        position: absolute;
-        height: 500px;
-        width: 100%;
-        background-color: rgb(51, 48, 48);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50%;
-        z-index: -3;
+.scroll-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.scroll-circle {
+    position: absolute;
+    background: transparent;
+    bottom: -4vh;
+    left: 50vw;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    border: 8px solid whitesmoke;
+    box-shadow: 5px 2px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-arrow {
+    position: absolute;
+    transform: rotate(90deg);
+    bottom: -4vh;
+    left: 51.1vw;
+    font-size: 56px;
+    font-weight: 800;
+    color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+}
+
+#container1 {
+    text-decoration: none;
+    position: absolute;
+    height:500px;
+    width: 100%;
+    background-color: rgb(65, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55.5%;
+    z-index: -1;
+}
+
+.block1 a {
+    position: relative;
+    text-decoration: none;
+    background-color: whitesmoke;
+    height: 380px;
+    width: 440px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 10px;
+    padding: 30px 100px 0 0 ;
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.block2 a {
+    position: relative;
+    text-decoration: none;
+    background-color: whitesmoke;
+    height: 380px;
+    width: 440px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 10px;
+    padding: 30px 100px 0 0 ;
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.block3 a {
+    position: relative;
+    text-decoration: none;
+    background-color: whitesmoke;
+    height: 380px;
+    width: 440px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 10px;
+    padding: 30px 100px 0 0 ;
+    color: black;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
