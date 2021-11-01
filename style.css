@@ -12,6 +12,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+nav {
+    background: #3d3b3b;
+    min-width: 100%;
+    height: 6.5vh;
+}
 
 body {
     background-image: url("https://elevenfifty.org/wp-content/themes/elevenfiftyacademy/assets/video/mobile.jpg");
@@ -22,116 +27,101 @@ body {
     z-index: -3;
 }
 
-.dropdown button {
-    font-size: 20px;
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20vw;
 }
 
-.dropdown {
-    position: fixed;
-    height: 75px;
-    width: 100%;
-    background-color: rgb(63, 60, 60);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: auto;
+.navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.coursebtn,
+.admissionbtn,
+.veteranbtn,
+.aboutbtn,
+.campusbtn,
+.employerbtn {
+    background: #3d3b3b;
+    color: whitesmoke;
+    padding: 16px;
+    font-size: 18px;
+    font-family: 'Overpass', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 6.5vh;
+    border: none;
+    align-content: center;
+}
+
+.courses,
+.admissions,
+.veterans,
+.about,
+.campus,
+.employer {
+    position: relative;
+    display: inline-block;
+}
+
+.coursebtn-content,
+.admissionbtn-content,
+.veteranbtn-content,
+.aboutbtn-content,
+.campusbtn-content,
+.employerbtn-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(41, 39, 39);
+    min-width: 100%;
+    width: 100vw;
+    margin-top: .01vh;
     z-index: 1;
 }
 
-.courses, .admissions {
-    position: relative;
+.coursebtn-content a,
+.admissionbtn-content a,
+.veteranbtn-content a,
+.aboutbtn-content a,
+.campusbtn-content a,
+.employerbtn-content a {
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.main-nav-link:hover {
-    background-color: #221f1f;
+.coursebtn-content a:hover,
+.admissionbtn-content a:hover,
+.veteranbtn-content a:hover,
+.aboutbtn-content a:hover,
+.campusbtn-content a:hover,
+.employerbtn-content a:hover {
+    background-color: rgb(41, 39, 39);
+}
+
+.courses:hover .coursebtn-content,
+.admissions:hover .admissionbtn-content,
+.veterans:hover .veteranbtn-content,
+.about:hover .aboutbtn-content,
+.campus:hover .campusbtn-content,
+.employer:hover .employerbtn-content {
     display: block;
 }
 
-.courses ul {
-    position: absolute;
-    background-color: rgb(26, 26, 26);
-    margin-top: 8px;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-}
-
-.admissions ul {
-    position: absolute;
-    background-color: rgb(26, 26, 26);
-    margin-top: 8px;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-}
-
-.veterans ul {
-    position: absolute;
-    background-color: rgb(26, 26, 26);
-    margin-top: 8px;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    list-style: none;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.4s ease;
-}
-
-.courses a, .admissions a, .veterans a {
-    color: white;
-    text-decoration: none;
-}
-
-.logo-text {
-    color: whitesmoke;
-    text-decoration: none;
-}
-
-.dropdown button {
-    background: none;
-    border: none;
-}
-
-.courses ul:hover,
-.admissions ul:hover,
-.veterans ul:hover {
-    color: lightskyblue;
-}
-
-.courses button:hover + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(12px)
-}
-
-.admissions button:hover+ ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(12px)
-}
-
-.veterans button:hover + ul {
-    opacity: 1;
-    pointer-events: all;
-    transform: translateY(12px)
+.courses:hover .coursebtn,
+.admissions:hover .admissionbtn,
+.veterans:hover .veteranbtn,
+.about:hover .aboutbtn,
+.campus:hover .campusbtn,
+.employer:hover .employerbtn {
+    background-color: #3d3b3b;
 }
 
 .discover-future {
